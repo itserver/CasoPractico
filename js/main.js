@@ -51,7 +51,7 @@ function inicializarElementos(){
 	$("#busquedaEnTerminologiaLocal").autocomplete({
 		source: function(request, response) {
 			$.ajax({
-					url: "http://www.itserver.es/ITServer/rest/catalogs/searchItemsInCatalog/catalog/termTest/termToSearch/" + request.term + "/numberOfElements/110?",
+					url: "http://www.itserver.es/ITServer/rest/catalogs/searchItemsInCatalog/catalog/terminologia_ejemplo/termToSearch/" + request.term + "/numberOfElements/110?",
 					dataType: "json",
 					beforeSend: function(req) {
 						req.setRequestHeader('Authorization', 'Basic ' + $.base64.encode(userpassword));
@@ -73,7 +73,7 @@ function inicializarElementos(){
 	$("#busquedaEnSubconjunto").autocomplete({
 		source: function(request, response) {
 			$.ajax({
-					url: "http://www.itserver.es/ITServer/rest/subsets/searchItemsInSubset/subset/pruebaMSSSI/termToSearch/" + request.term + "?numberOfElements=100",
+					url: "http://www.itserver.es/ITServer/rest/subsets/searchItemsInSubset/subset/224/termToSearch/" + request.term + "?numberOfElements=100",
 					dataType: "json",
 					beforeSend: function(req) {
 						req.setRequestHeader('Authorization', 'Basic ' + $.base64.encode(userpassword));
