@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!-- saved from url=(0047)http://getbootstrap.com/examples/justified-nav/ -->
+<html lang="es">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	    <meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <meta name="description" content="Caso practico">
+	    <meta name="author" content="Javier Fernández Valencia y Ignacio Colodrón Bestuer">
+	    <meta name="author" content="Javier Fernández Valencia y Ignacio Colodrón Bestuer">
+
+	    <!-- CSS -->
+		<link type="text/css" href="./css/jquery/jquery-ui-1.10.3.custom.css" rel="stylesheet" />
+		<link type="text/css" href="./css/jquery/jquery.treeview.css" rel="stylesheet" />
+	    <link rel="stylesheet" type="text/css" href="./css/estilos.css">
+
+	    <!-- javascript -->
+	    <script type="text/javascript" src="./js/jquery/jquery-1.9.1.js"></script>
+		<script type="text/javascript" src="./js/jquery/jquery-ui-1.10.3.custom.js"></script>
+		<script type="text/javascript" src="./js/jquery/jquery.base64.min.js"></script>
+	    <script type="text/javascript" src="./js/credentials.js"></script>
+	    <script type="text/javascript" src="./js/main.js"></script>
+
+   
+    	<title>Caso práctico</title>
+    </head>
+   
+  
+  	<body onload="inicializarElementos()">
+		
+		<h1>Caso práctico</h1>
+		
+
+		<fieldset class="fieldsetEstilo">
+			<legend>Búsqueda en todo SNOMED CT - RF1</legend>
+			<b>Buscar:</b> <input id="busquedaEnTodoSNOMED" placeholder="Busca en todo SNOMED CT" size="50"/>
+		</fieldset>
+		
+		<fieldset  class="fieldsetEstilo">
+			<legend>Búsqueda por contexto en SNOMED CT - Sustancia</legend>
+			<b>Buscar:</b> <input id="busquedaEnTodoSNOMEDConContexto" placeholder="Busca por contexto en SNOMED CT - Sustancia" size="50"/>
+		</fieldset>
+		
+		<fieldset  class="fieldsetEstilo">
+			<legend>Búsqueda en una terminología local</legend>
+			<b>Buscar:</b> <input id="busquedaEnTerminologiaLocal" placeholder="Busca en terminología local" size="50"/>
+		</fieldset>
+			       
+	    <fieldset  class="fieldsetEstilo">
+			<legend>Búsqueda en un subconjunto</legend>
+			<b>Buscar:</b> <input id="busquedaEnSubconjunto" placeholder="Busca en un subconjunto" size="50"/>
+		</fieldset>
+	  
+		<fieldset class="fieldsetEstilo">
+			<legend>Búsqueda de mapeos</legend>
+			<b>Buscar:</b> <input id="busquedaDeMapeos" placeholder="Busca en todo SNOMED CT- Español" size="50"/>
+			<b class="mapeoCIE">Mapeo con CIE-9:</b><input id="cie9map" readonly="true" placeholder="Mapeo con CIE-9"/>
+			<b class="mapeoCIE">Mapeo con CIE-10:</b><input id="cie10map" readonly="true" placeholder="Mapeo con CIE-10"/>
+		</fieldset>
+
+	</body>
+
+</html>
